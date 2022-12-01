@@ -10,58 +10,72 @@
         android:id="@+id/txtNombre3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
+        android:enabled="false"
+        android:hint="@string/txtNombre_hint"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="60dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtApellido3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="49dp"
         android:ems="10"
+        android:enabled="false"
+        android:hint="@string/txtApellido_hint"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre3" />
 
     <EditText
         android:id="@+id/txtDividendo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="47dp"
         android:ems="10"
+        android:hint="@string/txtDividendo_hint"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="246dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellido3" />
 
     <EditText
         android:id="@+id/txtDivisor3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="55dp"
         android:ems="10"
+        android:hint="@string/txtDivisor_hint"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="346dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDividendo3" />
 
     <EditText
         android:id="@+id/txtNumeriIv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
+        android:hint="@string/NumInv_hint"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="415dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDivisor3" />
 
     <Button
         android:id="@+id/buttonCerrar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="490dp" />
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="30dp"
+        android:text="Cerrrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeriIv3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

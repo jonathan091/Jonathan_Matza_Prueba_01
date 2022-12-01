@@ -8,13 +8,14 @@ import android.widget.EditText;
 public class ThirdActivity extends AppCompatActivity {
     private EditText nombre3;
     private EditText apellido3;
-    private EditText base3;
-    private EditText exponete3;
-    private EditText numero3;
+    private EditText dividendo3;
+    private EditText divisor3;
+    private EditText numeroInv3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+        
     }
 }
