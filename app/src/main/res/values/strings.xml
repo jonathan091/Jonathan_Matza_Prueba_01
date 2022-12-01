@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">JonathanMatzaPrueba01</string>
+    //main Activity
+    <string name="txtNombre_hint">Nombre</string>
+    <string name="txtApellido_hint">Apellido</string>
+    <string name="txtDividendo_hint">Dividendo</string>
+    <string name="txtDivisor_hint">Divisor</string>
+    <string name="txtparteen_hint">Parte Entera</string>
+    <string name="txtResiduo_hint">Residuo</string>
+    <string name="NumInv_hint">Numero Invertido</string>
+
+    <string name="buttonSigiente">Siguiente</string>
+    <string name="buttonMostrarResulado">Mostrar Resultado</string>
 </resources>
