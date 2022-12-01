@@ -12,17 +12,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="149dp"
         android:layout_marginTop="55dp"
+        android:onClick="onclick_Siguiente2"
         android:text="@string/buttonSigiente"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeroInv2" />
 
     <Button
-        android:id="@+id/buttonMostrar2"
+        android:id="@+id/buttoncerrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/buttonMostrarResulado"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="32dp"
+        android:text="Cerrar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSigiente2" />
 
