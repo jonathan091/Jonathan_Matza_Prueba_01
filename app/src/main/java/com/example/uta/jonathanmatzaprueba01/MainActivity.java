@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
         String ape = getIntent().getStringExtra("apellido");
         apellido.setText(ape);
 
-        String bas = getIntent().getStringExtra("base");
-        dividendo.setText(bas);
+        String divid = getIntent().getStringExtra("dividendo");
+        dividendo.setText(divid);
 
-        String exp = getIntent().getStringExtra("exponen");
-        divisor.setText(exp);
+        String diviso = getIntent().getStringExtra("divisor");
+        divisor.setText(diviso);
         //control boton mostrar
         if (apellido.length()==0){
             mostrar.setEnabled(false);
