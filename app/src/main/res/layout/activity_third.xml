@@ -74,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="126dp"
         android:layout_marginTop="30dp"
+        android:onClick="onclick_Cerrar3"
         android:text="Cerrrar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeriIv3" />

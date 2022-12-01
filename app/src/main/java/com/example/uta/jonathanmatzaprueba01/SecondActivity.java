@@ -38,8 +38,26 @@ public class SecondActivity extends AppCompatActivity {
         String password = apellido2.getText().toString();
         Intent siguiente = new Intent(this, ThirdActivity.class );
         siguiente.putExtra("nombreExtra", userName);
-        siguiente.putExtra("baseExtra", password);
+        siguiente.putExtra("apellidoExtra", password);
         startActivity(siguiente);
 
+    }
+    public void onclick_Cerrar2(View view){
+        Intent siguiente = new Intent(this, MainActivity.class );
+        String apellido = getIntent().getStringExtra("dividendo");
+        String exponente = getIntent().getStringExtra("divisor");
+        String numero = getIntent().getStringExtra("numero");
+
+
+        String nmb = nombre2.getText().toString();
+        String bas = apellido2.getText().toString();
+
+        siguiente.putExtra("apellido", apellido);
+        siguiente.putExtra("nombre", nmb);
+        siguiente.putExtra("dividendo",bas);
+        siguiente.putExtra("divisor",exponente);
+        siguiente.putExtra("numero",numero);
+
+        startActivity(siguiente);
     }
 }
