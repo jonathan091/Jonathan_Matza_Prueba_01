@@ -72,11 +72,11 @@ public class MainActivity extends AppCompatActivity {
         String divisor = getIntent().getStringExtra("divisor");
         int n1 = Integer.parseInt(dividendo);
         int n2 = Integer.parseInt(divisor);
-        
 
 
 
-        c = 1;
+
+         int c = 1;
         while( n1 >= n2){ //ciclo para la resta sucesiva
 
             n1 = n1 - n2;
