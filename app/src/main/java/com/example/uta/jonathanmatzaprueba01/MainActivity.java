@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         divisor=findViewById(R.id.txtDivisor);
         parteEntera=findViewById(R.id.txtParteEntera);
         numInvertido=findViewById(R.id.txtNumeroInv);
-
         mostrar=findViewById(R.id.buttonMostrar);
 
         String nombr = getIntent().getStringExtra("nombre");
@@ -55,21 +54,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Onclick_MostrarResultado(View view) {
-
-        int numero = Integer.valueOf( getIntent().getStringExtra("numero"));
-
         int  invertido = 0, resto;
+       String num = getIntent().getStringExtra("numero");
+        int numero = Integer.parseInt(num);
         while( numero > 0 ) {
             resto = numero % 10;
             invertido = invertido * 10 + resto;
             numero /= 10;
         }
 
-            String res = String.valueOf(invertido);
-            numInvertido.setText(res);
+        String res = String.valueOf(invertido);
+        numInvertido.setText(res);
 
-
-
-        }
+    }
 
 }
