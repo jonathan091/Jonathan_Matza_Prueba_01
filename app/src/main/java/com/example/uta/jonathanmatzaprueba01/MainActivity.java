@@ -54,4 +54,22 @@ public class MainActivity extends AppCompatActivity {
         startActivity(siguiente);
     }
 
+    public void Onclick_MostrarResultado(View view) {
+
+        int numero = Integer.valueOf( getIntent().getStringExtra("numero"));
+
+        int  invertido = 0, resto;
+        while( numero > 0 ) {
+            resto = numero % 10;
+            invertido = invertido * 10 + resto;
+            numero /= 10;
+        }
+
+            String res = String.valueOf(invertido);
+            numInvertido.setText(res);
+
+
+
+        }
+
 }

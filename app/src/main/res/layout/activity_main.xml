@@ -16,6 +16,7 @@
         android:enabled="false"
         android:hint="@string/txtNombre_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,6 +30,7 @@
         android:enabled="false"
         android:hint="@string/txtApellido_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
 
@@ -42,6 +44,7 @@
         android:enabled="false"
         android:hint="@string/txtDividendo_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtApellid" />
 
@@ -55,6 +58,7 @@
         android:enabled="false"
         android:hint="@string/txtDivisor_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDividendo" />
 
@@ -68,6 +72,7 @@
         android:enabled="false"
         android:hint="@string/txtparteen_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDividendo" />
 
@@ -81,6 +86,7 @@
         android:enabled="false"
         android:hint="@string/txtResiduo_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDividendo" />
 
@@ -94,6 +100,8 @@
         android:enabled="false"
         android:hint="@string/NumInv_hint"
         android:inputType="textPersonName"
+        android:onClick="Onclick_MostrarResultado"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDividendo" />
 

@@ -16,6 +16,7 @@
         android:enabled="false"
         android:hint="@string/txtNombre_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,6 +30,7 @@
         android:enabled="false"
         android:hint="@string/txtApellido_hint"
         android:inputType="textPersonName"
+        android:textColor="#141B42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre3" />
 
