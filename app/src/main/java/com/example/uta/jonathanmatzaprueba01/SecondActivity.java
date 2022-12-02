@@ -55,9 +55,9 @@ public class SecondActivity extends AppCompatActivity {
         String nmb = nombre2.getText().toString();
         String bas = apellido2.getText().toString();
 
-        siguiente.putExtra("apellido", apellido);
+        siguiente.putExtra("apellido",bas );
         siguiente.putExtra("nombre", nmb);
-        siguiente.putExtra("dividendo",bas);
+        siguiente.putExtra("dividendo",apellido);
         siguiente.putExtra("divisor",exponente);
         siguiente.putExtra("numero",numero);
 
