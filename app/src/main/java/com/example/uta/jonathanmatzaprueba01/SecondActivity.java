@@ -12,15 +12,17 @@ public class SecondActivity extends AppCompatActivity {
 
     private EditText nombre2;
     private EditText apellido2;
-    private EditText divisor2;
+
+
     private Button cerrar2;
-    private Button mostrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
         nombre2 = findViewById(R.id.txtNombre2);
         apellido2 = findViewById(R.id.txtApellido2);
+
         cerrar2 = findViewById(R.id.buttoncerrar);
 
 
@@ -29,6 +31,7 @@ public class SecondActivity extends AppCompatActivity {
 
         String ape = getIntent().getStringExtra("apellido");
         apellido2.setText(ape);
+
         //control boton mostrar
 
 

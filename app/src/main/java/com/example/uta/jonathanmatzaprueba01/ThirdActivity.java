@@ -36,13 +36,13 @@ public class ThirdActivity extends AppCompatActivity {
         Intent siguiente = new Intent(this, SecondActivity.class );
         String nomb = nombre3.getText().toString();
         String apell = apellido3.getText().toString();
-        String base = dividendo3.getText().toString();
-        String exponen = divisor3.getText().toString();
+        String divi = dividendo3.getText().toString();
+        String divis = divisor3.getText().toString();
         String numer = numeroInv3.getText().toString();
         siguiente.putExtra("nombre", nomb);
         siguiente.putExtra("apellido", apell);
-        siguiente.putExtra("dividendo", base);
-        siguiente.putExtra("divisor", exponen);
+        siguiente.putExtra("dividendo", divi);
+        siguiente.putExtra("divisor", divis);
         siguiente.putExtra("numero", numer);
         startActivity(siguiente);
 
