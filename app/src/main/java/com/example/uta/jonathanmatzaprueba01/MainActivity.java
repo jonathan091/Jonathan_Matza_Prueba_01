@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText dividendo;
     private EditText divisor;
     private EditText parteEntera;
+    private EditText residuo;
     private EditText numInvertido;
 
     private Button mostrar;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         parteEntera=findViewById(R.id.txtParteEntera);
         numInvertido=findViewById(R.id.txtNumeroInv);
         mostrar=findViewById(R.id.buttonMostrar);
+        residuo=findViewById(R.id.txtResiduo);
 
         String nombr = getIntent().getStringExtra("nombre");
         nombre.setText(nombr);
@@ -65,6 +67,28 @@ public class MainActivity extends AppCompatActivity {
 
         String res = String.valueOf(invertido);
         numInvertido.setText(res);
+
+        String dividendo = getIntent().getStringExtra("dividendo");
+        String divisor = getIntent().getStringExtra("divisor");
+        int n1 = Integer.parseInt(dividendo);
+        int n2 = Integer.parseInt(divisor);
+        
+
+
+
+        c = 1;
+        while( n1 >= n2){ //ciclo para la resta sucesiva
+
+            n1 = n1 - n2;
+            c++;       //variable cociente o resultado
+        }
+        int modulo= n1 % n2;
+
+        String t = String.valueOf(c);
+        parteEntera.setText(t);
+        String g = String.valueOf(modulo);
+          residuo .setText(g);
+
 
     }
 
